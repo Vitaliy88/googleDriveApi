@@ -36,7 +36,7 @@ const drive = google.drive({
 
 drive.changes.getStartPageToken({}, function (err, res) {
   console.log('Start token:', res.data.startPageToken);
-  pageToken = res.data.startPageToken;
+  const pageToken = res.data.startPageToken;
 
   drive.changes.watch({
     pageToken: pageToken,
