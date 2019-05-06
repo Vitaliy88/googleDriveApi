@@ -48,8 +48,6 @@ drive.changes.getStartPageToken({}, function (err, res) {
     },
     contentType: 'application/json'
   }, function(err, result) {
-    console.dir(err)
-    debugger
     if(err) throw new Error(err)
     console.log(result)
   });
